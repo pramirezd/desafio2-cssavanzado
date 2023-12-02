@@ -101,8 +101,17 @@ ul{
 .card-body p{
     margin: 0.5rem;
     font-family: 'Manrope', sans-serif;
-    font-size: 11pt;
     text-align: center;
+}
+
+.nombre-producto {
+    font-size: 11pt;
+    font-weight: 400;
+}
+
+.precio-producto {
+    font-size: 10pt;
+    font-weight: 600;
 }
 
 .card-footer{
