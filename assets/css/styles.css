@@ -14,15 +14,28 @@ body{
 .header {
     grid-area: header;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 6rem;
-    background-color: white;
+    background-color: rgba(203, 5, 127, 0.3);
+    color: white;
 }
 
-.header img{
+.header img {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.header p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 45pt;
+    font-weight: bold;
+    color: #431B73;
+}
+
+.header span{
+    color: #CD007F;
 }
 
 .sidebar{
@@ -30,37 +43,37 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 15rem;
+    width: 10rem;
     min-height: calc(100vh - 8rem);
-    background-color: gainsboro;
+    background-color: rgba(67, 27, 115, 0.15);
+    font-family: 'Manrope', sans-serif;
+    font-size: smaller;
 }
 
 h3{
     width: 100%;
-    padding-left: 7.5rem;
+    padding-left: 4rem;
 }
 
 ul{
     width: 100%;
     list-style: none;
-    padding-left: 7.5rem;
+    padding-left: 4rem;
 }
 
 .main{
     grid-area: main;
-    min-width: calc(100vw - 15rem);
-    background-color: gainsboro;
+    min-width: calc(100vw - 12rem);
+    background-color: rgba(28, 109, 32, 0.15);
 }
 
 .grid-container-main{
     display: grid;
-    grid-template-columns: 2fr 2fr 3fr 3fr;
-    gap: 70px;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 1rem;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
 
-}
-
-.cards{
-    display: flex;
 }
 
 .card{
@@ -79,16 +92,27 @@ ul{
 }
 
 .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-grow: 1;
 }
 
+.card-body p{
+    margin: 0.5rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 11pt;
+    text-align: center;
+}
+
 .card-footer{
-    background-color: violet;
+    background-color: #CB057F;
     color: white;
-    border: 1px solid violet;
+    border: 1px solid #CB057F;
     text-align: center;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-family: 'Manrope', sans-serif;
 }
 
 .footer{
@@ -97,4 +121,6 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(203, 5, 127, 0.3);
+    font-family: 'Manrope', sans-serif;
 }
