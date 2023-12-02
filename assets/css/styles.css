@@ -15,9 +15,9 @@ body{
     grid-area: header;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 6rem;
+    height: 5.5rem;
     background-color: rgba(203, 5, 127, 0.3);
     color: white;
 }
@@ -29,13 +29,18 @@ body{
 
 .header p {
     font-family: 'Manrope', sans-serif;
-    font-size: 45pt;
+    font-size: 40pt;
     font-weight: bold;
     color: #431B73;
+    margin: 0;
 }
 
 .header span{
     color: #CD007F;
+}
+
+.header i{
+    padding-right: 1.5rem;
 }
 
 .sidebar{
@@ -64,6 +69,7 @@ ul{
 .main{
     grid-area: main;
     min-width: calc(100vw - 12rem);
+    min-height: calc(100vh - 8rem);
     background-color: rgba(28, 109, 32, 0.15);
 }
 
@@ -126,10 +132,12 @@ ul{
 
 .footer{
     grid-area: footer;
-    height: 2rem;
+    height: 2.15rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(203, 5, 127, 0.3);
     font-family: 'Manrope', sans-serif;
+    padding: 0;
+    margin: 0;
 }
